@@ -1,19 +1,13 @@
 package main
 
 import (
-	"fmt"
-	"log"
-	"net/http"
+	"BasicWebApp/src/router"
+	"BasicWebApp/src/server"
 )
 
-func main() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		n, err := fmt.Fprintf(w, "Hello from go")
-		if err != nil {
-			log.Fatalln(err)
-		}
-		log.Println("No of bytes written: ", n)
-	})
+const portNumber = ":8080"
 
-	_ = http.ListenAndServe("localhost:8080", nil)
+func main() {
+	router.Router()
+	server.StartServer(portNumber)
 }
