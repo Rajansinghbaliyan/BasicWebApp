@@ -86,6 +86,7 @@ fabric.properties
 *.out
 /out
 /.idea
+/src/pkg/mod/*
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
