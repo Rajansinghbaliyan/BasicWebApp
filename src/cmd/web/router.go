@@ -1,8 +1,8 @@
 package main
 
 import (
+	"BasicWebApp/src/internal/handlers"
 	"BasicWebApp/src/pkg/config"
-	"BasicWebApp/src/pkg/handlers"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 	"net/http"
